@@ -44,7 +44,7 @@ describe("CardBinService", () => {
       const mockBinData = {
         Status: "00",
         Provider: "VISA",
-        CardType: "Credit",
+        CardType: "Creditcard",
         ForeignCard: false,
         CorporateCard: false,
         Issuer: "Test Bank",
@@ -120,7 +120,7 @@ describe("CardBinService", () => {
       const mockBinData = {
         Status: "00",
         Provider: "VISA",
-        CardType: "Credit",
+        CardType: "Creditcard",
         ForeignCard: false,
         CorporateCard: false,
         Issuer: "Test Bank",
@@ -145,7 +145,7 @@ describe("CardBinService", () => {
       const mockBinData = {
         Status: "00",
         Provider: "VISA",
-        CardType: "Credit",
+        CardType: "Creditcard",
         ForeignCard: true,
         CorporateCard: false,
         Issuer: "Foreign Bank",
@@ -180,7 +180,7 @@ describe("CardBinService", () => {
       const mockBinData = {
         Status: "00",
         Provider: "VISA",
-        CardType: "Credit",
+        CardType: "Creditcard",
         ForeignCard: false,
         CorporateCard: false,
         Issuer: "Test Bank",

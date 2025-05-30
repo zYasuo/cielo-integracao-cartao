@@ -1,6 +1,6 @@
+import { CieloConfig } from "@/config/env.config"
 import type { ICardBinModel } from "@/models/cardBin/cardBin.models"
 import type { TResponseApi } from "@/types/response_api.types"
-import { CieloConfig } from "@/config/env.config"
 import { ICardBinResponse } from "@/types/response.cardBin.types"
 import { CieloRepositoryBase } from "@/repositories/base/cielo.repository.base"
 

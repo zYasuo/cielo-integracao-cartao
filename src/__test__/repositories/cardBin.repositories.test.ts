@@ -49,7 +49,7 @@ describe("CardBinRepository", () => {
       const mockBinData = {
         Status: "00",
         Provider: "VISA",
-        CardType: "Credit",
+        CardType: "Creditcard",
         ForeignCard: false,
         CorporateCard: false,
         Issuer: "Test Bank",

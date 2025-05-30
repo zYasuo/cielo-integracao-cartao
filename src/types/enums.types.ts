@@ -11,3 +11,20 @@ export enum EResponseError {
   NETWORK_ERROR = "NETWORK_ERROR",
   UNKNOWN_ERROR = "UNKNOWN_ERROR",
 }
+
+export enum ECardType {
+  CREDIT = "Creditcard",
+  DEBIT = "DebitCard",
+}
+
+
+export enum EBrandCard {
+  MASTERCARD = "MASTER", 
+  VISA = "VISA",
+  AMEX = "AMEX",
+  ELO = "ELO",
+  HIPERCARD = "HIPERCARD",
+  DINERS = "DINERS",
+  DISCOVER = "DISCOVER",
+  JCB = "JCB",
+}

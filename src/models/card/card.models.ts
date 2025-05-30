@@ -8,4 +8,4 @@ export type TBrandCard =
   | "DISCOVER"
   | "JCB";
 
-export type TCardType = "Crédito" | "Débito";
+export type TCardType = "Creditcard" | "DebitCard";

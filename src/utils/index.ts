@@ -1,4 +1,5 @@
 import { EResponseError } from "@/types/enums.types"
+import { IZeroAuthErrorResponse, IZeroAuthResponse, TZeroAuthApiResponse } from "@/types/response.zeroAuth.types"
 
 export function HandleErrorResponse(status: number): {
   error: string
@@ -8,7 +9,7 @@ export function HandleErrorResponse(status: number): {
   switch (status) {
     case 400:
       return {
-        error: "Invalid request format. Please check the card BIN format.",
+        error: "Invalid request. Please check your input parameters.",
         code: EResponseError.BAD_REQUEST,
         shouldRetry: false,
       }
@@ -29,7 +30,7 @@ export function HandleErrorResponse(status: number): {
 
     case 404:
       return {
-        error: "Card BIN not found or endpoint unavailable. The BIN may not exist in our database.",
+        error: "Resource not found. Please check the requested endpoint or parameters.",
         code: EResponseError.NOT_FOUND_ERROR,
         shouldRetry: false,
       }
@@ -69,4 +70,13 @@ export function HandleErrorResponse(status: number): {
         shouldRetry: status >= 500,
       }
   }
+}
+
+
+export function isZeroAuthErrorResponse(response: TZeroAuthApiResponse): response is IZeroAuthErrorResponse {
+  return 'Code' in response && 'Message' in response;
+}
+
+export function isZeroAuthSuccessResponse(response: TZeroAuthApiResponse): response is IZeroAuthResponse {
+  return 'Valid' in response && 'ReturnCode' in response;
 }
