@@ -8,11 +8,7 @@ import type { IZeroAuthModel } from "@/models/zeroAuth/zeroAuth.models";
  * POST /api/cielo/v1/zero-auth - Realiza a Validação do Cartão antes do Processamento
  */
 export async function POST(request: NextRequest): Promise<
-  NextResponse<{
-    isValid: boolean
-    message: string
-    success: boolean
-  }>
+  NextResponse<TResponseApi<TZeroAuthApiResponse>>
 > {
   try {
     const body = await request.json()
