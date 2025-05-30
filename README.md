@@ -1,8 +1,8 @@
-# Cielo Card BIN API
+# Cielo Card API - Em Desenvolvimento
 
-Microserviço para consulta de informações de BIN (Bank Identification Number) de cartões via API da Cielo.
+Microserviço para integração de pagamento via cartão
 
-## Funcionalidades - Sendo Desenvolvido
+## Funcionalidades - Em Desenvolvimento
 
 - **Consulta de BIN**: Informações detalhadas sobre cartões através do BIN
 - **Extração de BIN**: Extração do BIN de números de cartão completos
