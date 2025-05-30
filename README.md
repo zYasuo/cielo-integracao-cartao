@@ -1,13 +1,11 @@
 # Cielo Card API - Em Desenvolvimento
 
-Microserviço para integração de pagamento via cartão
+Microserviço para integração de pagamento via cartão - Cielo
 
 ## Funcionalidades - Em Desenvolvimento
 
 - **Consulta de BIN**: Informações detalhadas sobre cartões através do BIN
-- **Extração de BIN**: Extração do BIN de números de cartão completos
-- **Validação de Cartões**: Verificação se um cartão é válido para processamento
-- **Consulta em Lote**: Processamento de múltiplos BINs em uma única requisição
+- **Validação de Cartões (ZeroAuth)**: Verificação se um cartão é válido para processamento
 
 ## Tecnologias
 
