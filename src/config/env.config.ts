@@ -5,6 +5,7 @@ export const CieloConfig = {
   routes: {
     cardBin: "https://apiquerysandbox.cieloecommerce.cielo.com.br/1/cardBin/{BIN}",
     zeroAuth: "https://apisandbox.cieloecommerce.cielo.com.br/1/zeroauth/",
+    creditCard: "https://apisandbox.cieloecommerce.cielo.com.br/1/sales",
   },
   headers: {
     "Content-Type": "application/json",

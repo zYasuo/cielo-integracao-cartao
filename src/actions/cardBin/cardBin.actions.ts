@@ -2,7 +2,7 @@
 
 import { CardBinController } from "@/controllers/cardBin/cardBin.controller";
 import type { ICardBinResponse } from "@/types/response.cardBin.types";
-import type { TResponseApi } from "@/types/response_api.types";
+import type { TResponseApi } from "@/types/response.api.types";
 
 /**
  * Ação para buscar informações do BIN do cartão
@@ -28,22 +28,20 @@ export async function ValidateCardForProcessingAction(
   return await controller.isCardValidForProcessing(ABin);
 }
 
-
-
 /**
  * Ação para extrair o BIN de um número de cartão completo
  * @param cardNumber - O número do cartão de crédito ou débito
  * @return Promise<TResponseApi<{ bin: string | null }>> - Resposta com o BIN extraído ou null se inválido
  */
 export async function ExtractBinFromCardNumberAction(
-  cardNumber: string,
+  cardNumber: string
 ): Promise<TResponseApi<{ bin: string | null }>> {
-  const controller = new CardBinController()
-  const bin = controller.extractBinFromCardNumber(cardNumber)
+  const controller = new CardBinController();
+  const bin = controller.extractBinFromCardNumber(cardNumber);
 
   return {
     success: true,
     data: { bin },
     statusCode: 200,
-  }
+  };
 }

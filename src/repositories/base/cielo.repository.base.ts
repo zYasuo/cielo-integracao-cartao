@@ -1,7 +1,7 @@
 import axios, { type AxiosInstance, type AxiosRequestConfig } from "axios"
 import { CieloConfig } from "@/config/env.config"
 import { EResponseError } from "@/types/enums.types"
-import type { TResponseApi } from "@/types/response_api.types"
+import type { TResponseApi } from "@/types/response.api.types"
 import { HandleErrorResponse } from "@/utils"
 
 export abstract class CieloRepositoryBase {

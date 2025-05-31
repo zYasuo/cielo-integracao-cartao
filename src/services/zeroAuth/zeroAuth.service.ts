@@ -1,4 +1,4 @@
-import type { TResponseApi } from "@/types/response_api.types";
+import type { TResponseApi } from "@/types/response.api.types";
 import { EResponseError } from "@/types/enums.types";
 import { TZeroAuthApiResponse } from "@/types/response.zeroAuth.types";
 import { SZeroAuthSchema } from "@/validators/zeroAuth/zeroAuth.validator";

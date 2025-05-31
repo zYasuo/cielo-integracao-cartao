@@ -10,13 +10,13 @@ export enum EResponseError {
   TIMEOUT_ERROR = "TIMEOUT_ERROR",
   NETWORK_ERROR = "NETWORK_ERROR",
   UNKNOWN_ERROR = "UNKNOWN_ERROR",
+  PAYMENT_REJECTED = "PAYMENT_REJECTED",
 }
 
 export enum ECardType {
-  CREDIT = "Creditcard",
+  CREDIT = "CreditCard",
   DEBIT = "DebitCard",
 }
-
 
 export enum EBrandCard {
   MASTERCARD = "MASTER", 
@@ -27,4 +27,17 @@ export enum EBrandCard {
   DINERS = "DINERS",
   DISCOVER = "DISCOVER",
   JCB = "JCB",
+}
+
+export enum ECurrency {
+  BRL = "BRL",
+}
+
+export enum ECountry {
+  BR = "BRA",
+}
+
+export enum EIdentificationType {
+  CPF = "CPF",
+  CNPJ = "CNPJ",
 }

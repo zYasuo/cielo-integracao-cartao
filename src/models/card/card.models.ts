@@ -9,3 +9,8 @@ export type TBrandCard =
   | "JCB";
 
 export type TCardType = "Creditcard" | "DebitCard";
+export type TCurrency = "BRL";
+export type TCountry = "BRA";
+export type TProvider = "Cielo";
+export type TSoftDescriptor = "Cielo-Integration";
+export type TIdentificationType = "CPF" | "CNPJ";

@@ -80,3 +80,4 @@ export function isZeroAuthErrorResponse(response: TZeroAuthApiResponse): respons
 export function isZeroAuthSuccessResponse(response: TZeroAuthApiResponse): response is IZeroAuthResponse {
   return 'Valid' in response && 'ReturnCode' in response;
 }
+

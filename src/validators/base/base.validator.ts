@@ -1,6 +1,6 @@
 import { z } from "zod"
 import { EResponseError } from "@/types/enums.types"
-import type { TResponseApi, TValidationResult } from "@/types/response_api.types"
+import type { TResponseApi, TValidationResult } from "@/types/response.api.types"
 
 export class BaseValidator {
   static validate<T>(schema: z.ZodSchema<T>, data: unknown): TValidationResult<T> {

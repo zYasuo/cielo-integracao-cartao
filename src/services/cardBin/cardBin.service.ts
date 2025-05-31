@@ -1,4 +1,4 @@
-import type { TResponseApi } from "@/types/response_api.types"
+import type { TResponseApi } from "@/types/response.api.types"
 import { EResponseError } from "@/types/enums.types"
 import type { ICardBinResponse } from "@/types/response.cardBin.types"
 import { SCardBinSchema, SCardNumberSchema } from "@/validators/cardBin/cardBin.validator"

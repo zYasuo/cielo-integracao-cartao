@@ -1,6 +1,6 @@
 "use server";
 import { ZeroAuthController } from "@/controllers/zeroAuth/zeroAuth.controller";
-import type { TResponseApi } from "@/types/response_api.types";
+import type { TResponseApi } from "@/types/response.api.types";
 import { IZeroAuthModel } from "@/models/zeroAuth/zeroAuth.models";
 import { TZeroAuthApiResponse } from "@/types/response.zeroAuth.types";
 
@@ -10,10 +10,10 @@ import { TZeroAuthApiResponse } from "@/types/response.zeroAuth.types";
  * @return Promise<TResponseApi<TZeroAuthApiResponse>> - Resposta com o resultado da validação
  */
 export async function ValidateZeroAuthAction(
-  zeroAuthData: IZeroAuthModel,
+  zeroAuthData: IZeroAuthModel
 ): Promise<TResponseApi<TZeroAuthApiResponse & { isValid?: boolean }>> {
-  const controller = new ZeroAuthController()
-  const result = await controller.validateZeroAuth(zeroAuthData)
+  const controller = new ZeroAuthController();
+  const result = await controller.validateZeroAuth(zeroAuthData);
 
   // Adicionar a propriedade isValid para facilitar o uso no cliente
   if (result.success && result.data) {
@@ -23,9 +23,8 @@ export async function ValidateZeroAuthAction(
         ...result.data,
         isValid: controller.isCardValid(result),
       },
-    }
+    };
   }
 
-  return result
+  return result;
 }
-

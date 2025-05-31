@@ -1,4 +1,4 @@
-import type { TResponseApi } from "@/types/response_api.types";
+import type { TResponseApi } from "@/types/response.api.types";
 import { EResponseError } from "@/types/enums.types";
 import { ICardBinResponse } from "@/types/response.cardBin.types";
 import { CardBinService } from "@/services/cardBin/cardBin.service";

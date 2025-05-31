@@ -1,5 +1,5 @@
 import { CardBinController } from "@/controllers/cardBin/cardBin.controller"
-import type { TResponseApi } from "@/types/response_api.types"
+import type { TResponseApi } from "@/types/response.api.types"
 import { type NextRequest, NextResponse } from "next/server"
 
 /**
