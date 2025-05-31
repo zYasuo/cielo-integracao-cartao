@@ -6,6 +6,7 @@ Microserviço para integração de pagamento via cartão - Cielo
 
 - **Consulta de BIN**: Informações detalhadas sobre cartões através do BIN
 - **Validação de Cartões (ZeroAuth)**: Verificação se um cartão é válido para processamento
+- **Cobrança com Cartão de Crédito**: Faz a validação e processamento da cobrança
 
 ## Tecnologias
 
