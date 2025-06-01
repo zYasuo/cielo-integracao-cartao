@@ -41,3 +41,13 @@ export enum EIdentificationType {
   CPF = "CPF",
   CNPJ = "CNPJ",
 }
+
+export enum EZeroAuthCardOnFile {
+  FIRST = "First",
+  USED = "Used",
+}
+
+export enum EZeroAuthCardOnFileReason {
+  UNSCHEDULED = "Unscheduled",
+  RECURRING = "Recurring",
+}

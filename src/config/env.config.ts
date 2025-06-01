@@ -1,6 +1,5 @@
 
 export const CieloConfig = {
-  baseUrl: "https://apiquerysandbox.cieloecommerce.cielo.com.br",
   timeout: 30000,
   routes: {
     cardBin: "https://apiquerysandbox.cieloecommerce.cielo.com.br/1/cardBin/{BIN}",

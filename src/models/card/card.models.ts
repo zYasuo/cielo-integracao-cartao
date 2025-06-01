@@ -8,7 +8,7 @@ export type TBrandCard =
   | "DISCOVER"
   | "JCB";
 
-export type TCardType = "Creditcard" | "DebitCard";
+export type TCardType = "CreditCard" | "DebitCard";
 export type TCurrency = "BRL";
 export type TCountry = "BRA";
 export type TProvider = "Cielo";
