@@ -30,10 +30,12 @@ export const SZeroAuthSchema = z.object({
       "Expiration date must be in MM/YYYY format"
     ),
   SecurityCode: z
-    .string()
-    .min(3, "Security code is required")
-    .max(3, "Security code must be 3")
-    .regex(/^\d+$/, "Security code must contain only digits"),
+  .string()
+  .min(3, "Security code must be at least 3 digits")
+  .regex(/^\d+$/, "Security code must contain only digits")
+  .refine((value) => value.length === 3 || value.length === 4, {
+    message: "Security code must be 3 or 4 digits"
+  }),
   Brand: z.nativeEnum(EBrandCard, {
     errorMap: () => ({ message: "Brand is required" }),
   }),
